@@ -24,6 +24,7 @@ assignees:
   - giventofly
 
 status-website:
+  baseUrl: /uptime # "repo" is your repository name
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: uptime.josemoreira.pt
