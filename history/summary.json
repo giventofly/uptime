@@ -77,19 +77,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/bookmarks.josemoreira.pt.ico",
     "slug": "bookmarks-josemoreira-pt",
     "status": "up",
-    "uptime": "2.75%",
-    "uptimeDay": "2.75%",
-    "uptimeWeek": "2.75%",
-    "uptimeMonth": "2.75%",
-    "uptimeYear": "2.75%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 496,
     "timeDay": 496,
     "timeWeek": 496,
     "timeMonth": 496,
     "timeYear": 496,
-    "dailyMinutesDown": {
-      "2024-10-15": 9
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "wp.josemoreira.pt",
