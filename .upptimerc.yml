@@ -12,7 +12,7 @@ sites:
   - name: the pipe stays lit
     url: https://thepipestayslit.com
   - name: bookmarks.josemoreira.pt
-    url: https://bookbmarks.josemoreira.pt
+    url: https://bookmarks.josemoreira.pt
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
   - name: xs.josemoreira.pt
@@ -37,8 +37,6 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/uptime
-    - title: JAM
-      href: https://josemoreira.pt
 theme: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/dracula.css
 
 # Upptime also supports notifications, assigning issues, and more
