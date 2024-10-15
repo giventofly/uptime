@@ -18,7 +18,7 @@ sites:
   - name: xs.josemoreira.pt
     url: https://xs.josemoreira.pt
   
-#delay: 5000
+delay: 2000
 
 assignees:
   - giventofly
@@ -31,7 +31,7 @@ status-website:
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/Custom_SNEK_yellow_bg_clearer.png
   name: Upty 
-  introTitle: some uptime tracking, with dracula theme
+  #introTitle: some uptime tracking, with dracula theme
   #introMessage: 
   navbar:
     - title: Status
