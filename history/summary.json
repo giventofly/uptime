@@ -58,19 +58,19 @@
     "url": "https://thepipestayslit.com",
     "icon": "https://icons.duckduckgo.com/ip3/thepipestayslit.com.ico",
     "slug": "the-pipe-stays-lit",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 382,
-    "timeDay": 337,
-    "timeWeek": 382,
-    "timeMonth": 382,
-    "timeYear": 382,
+    "status": "up",
+    "uptime": "99.52%",
+    "uptimeDay": "96.98%",
+    "uptimeWeek": "99.52%",
+    "uptimeMonth": "99.52%",
+    "uptimeYear": "99.52%",
+    "time": 384,
+    "timeDay": 373,
+    "timeWeek": 384,
+    "timeMonth": 384,
+    "timeYear": 384,
     "dailyMinutesDown": {
-      "2024-10-22": 0
+      "2024-10-22": 44
     }
   },
   {
@@ -96,19 +96,19 @@
     "url": "https://wp.josemoreira.pt",
     "icon": "https://icons.duckduckgo.com/ip3/wp.josemoreira.pt.ico",
     "slug": "wp-josemoreira-pt",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 768,
-    "timeDay": 599,
-    "timeWeek": 768,
-    "timeMonth": 768,
-    "timeYear": 768,
+    "status": "up",
+    "uptime": "99.52%",
+    "uptimeDay": "96.98%",
+    "uptimeWeek": "99.52%",
+    "uptimeMonth": "99.52%",
+    "uptimeYear": "99.52%",
+    "time": 780,
+    "timeDay": 757,
+    "timeWeek": 780,
+    "timeMonth": 780,
+    "timeYear": 780,
     "dailyMinutesDown": {
-      "2024-10-22": 0
+      "2024-10-22": 44
     }
   },
   {
@@ -116,19 +116,19 @@
     "url": "https://xs.josemoreira.pt",
     "icon": "https://icons.duckduckgo.com/ip3/xs.josemoreira.pt.ico",
     "slug": "xs-josemoreira-pt",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 572,
-    "timeDay": 510,
-    "timeWeek": 572,
-    "timeMonth": 572,
-    "timeYear": 572,
+    "status": "up",
+    "uptime": "99.52%",
+    "uptimeDay": "96.98%",
+    "uptimeWeek": "99.52%",
+    "uptimeMonth": "99.52%",
+    "uptimeYear": "99.52%",
+    "time": 578,
+    "timeDay": 575,
+    "timeWeek": 578,
+    "timeMonth": 578,
+    "timeYear": 578,
     "dailyMinutesDown": {
-      "2024-10-22": 0
+      "2024-10-22": 44
     }
   }
 ]
