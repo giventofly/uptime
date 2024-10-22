@@ -58,18 +58,20 @@
     "url": "https://thepipestayslit.com",
     "icon": "https://icons.duckduckgo.com/ip3/thepipestayslit.com.ico",
     "slug": "the-pipe-stays-lit",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 385,
-    "timeDay": 369,
-    "timeWeek": 385,
-    "timeMonth": 385,
-    "timeYear": 385,
-    "dailyMinutesDown": {}
+    "time": 382,
+    "timeDay": 337,
+    "timeWeek": 382,
+    "timeMonth": 382,
+    "timeYear": 382,
+    "dailyMinutesDown": {
+      "2024-10-22": 0
+    }
   },
   {
     "name": "bookmarks.josemoreira.pt",
@@ -94,35 +96,39 @@
     "url": "https://wp.josemoreira.pt",
     "icon": "https://icons.duckduckgo.com/ip3/wp.josemoreira.pt.ico",
     "slug": "wp-josemoreira-pt",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 781,
-    "timeDay": 725,
-    "timeWeek": 781,
-    "timeMonth": 781,
-    "timeYear": 781,
-    "dailyMinutesDown": {}
+    "time": 768,
+    "timeDay": 599,
+    "timeWeek": 768,
+    "timeMonth": 768,
+    "timeYear": 768,
+    "dailyMinutesDown": {
+      "2024-10-22": 0
+    }
   },
   {
     "name": "xs.josemoreira.pt",
     "url": "https://xs.josemoreira.pt",
     "icon": "https://icons.duckduckgo.com/ip3/xs.josemoreira.pt.ico",
     "slug": "xs-josemoreira-pt",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 577,
-    "timeDay": 551,
-    "timeWeek": 577,
-    "timeMonth": 577,
-    "timeYear": 577,
-    "dailyMinutesDown": {}
+    "time": 572,
+    "timeDay": 510,
+    "timeWeek": 572,
+    "timeMonth": 572,
+    "timeYear": 572,
+    "dailyMinutesDown": {
+      "2024-10-22": 0
+    }
   }
 ]
