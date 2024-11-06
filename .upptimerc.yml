@@ -17,6 +17,15 @@ sites:
     url: https://wp.josemoreira.pt
   - name: xs.josemoreira.pt
     url: https://xs.josemoreira.pt
+  - name: the pipe stays lit
+    url: https://thepipestayslit.com
+  - name: snekboard
+    url: https://snekboard.com
+  - name: outnow
+    url: https://outnow.josemoreira.pt
+  - name: suggestions
+    url: https://suggestions.josemoreira.pt
+    
   
 delay: 2000
 
