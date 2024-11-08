@@ -25,6 +25,8 @@ sites:
     url: https://outnow.josemoreira.pt
   - name: suggestions
     url: https://suggestions.josemoreira.pt
+  - name: stick a snek
+    url: https://stickasnek.com
     
   
 delay: 2000
