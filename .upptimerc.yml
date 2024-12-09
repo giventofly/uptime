@@ -27,7 +27,8 @@ sites:
     url: https://suggestions.josemoreira.pt
   - name: stick a snek
     url: https://stickasnek.com
-    
+  - name: only sneks
+    url: https://onlysneks.club
   
 delay: 2000
 
