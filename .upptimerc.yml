@@ -19,7 +19,7 @@ sites:
     url: https://xs.josemoreira.pt
   - name: the pipe stays lit
     url: https://thepipestayslit.com
-  - name: snekboard
+  - name: snek board
     url: https://snekboard.com
   - name: outnow
     url: https://outnow.josemoreira.pt
@@ -27,8 +27,8 @@ sites:
     url: https://suggestions.josemoreira.pt
   - name: stick a snek
     url: https://stickasnek.com
-  - name: only sneks
-    url: https://onlysneks.club
+  - name: snek forge
+    url: https://snekforge.com
   
 delay: 2000
 
