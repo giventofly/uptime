@@ -29,6 +29,10 @@ sites:
     url: https://stickasnek.com
   - name: snek forge
     url: https://snekforge.com
+  - name: linkding
+    url: https://links.josemoreira.pt
+  - name: only sneks
+    url: https://onlysneks.club
   
 delay: 2000
 
