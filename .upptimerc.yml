@@ -3,38 +3,52 @@ owner: giventofly # Your GitHub organization or username, where this repository 
 repo: uptime # The name of this repository
 
 sites:
+  - name: Kanban Jam
+    url: https://boards.josemoreira.pt
+  - name: bookmarks.josemoreira.pt
+    url: https://bookmarks.josemoreira.pt
   - name: josemoreira.pt
     url: https://www.josemoreira.pt
-  - name: weather
-    url: https://weather.josemoreira.pt
+  - name: levvy.josemoreira.pt
+    url: https://levvy.josemoreira.pt
+  - name: Linkding Jam
+    url: https://links.josemoreira.pt
+  - name: log.josemoreira.pt
+    url: https://log.josemoreira.pt
+  - name: only sneks
+    url: https://onlysneks.club
+  - name: outnow
+    url: https://outnow.josemoreira.pt
+  - name: redis.josemoreira.pt
+    url: https://redis.josemoreira.pt
+  - name: rss.josemoreira.pt
+    url: https://rss.josemoreira.pt
+  - name: screenshots.josemoreira.pt
+    url: https://screenshots.josemoreira.pt
+  - name: snek board
+    url: https://snekboard.com
+  - name: snek forge
+    url: https://snekforge.com
+  - name: stick a snek
+    url: https://stickasnek.com
+  - name: stats.stickasnek.com
+    url: https://stats.stickasnek.com
+  - name: suggestions
+    url: https://suggestions.josemoreira.pt
   - name: snek timeline
     url: https://snektimeline.com
   - name: the pipe stays lit
     url: https://thepipestayslit.com
-  - name: bookmarks.josemoreira.pt
-    url: https://bookmarks.josemoreira.pt
+  - name: unsplash.josemoreira.pt
+    url: https://unsplash.josemoreira.pt
+  - name: weather
+    url: https://weather.josemoreira.pt
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
   - name: xs.josemoreira.pt
     url: https://xs.josemoreira.pt
-  - name: snek board
-    url: https://snekboard.com
-  - name: outnow
-    url: https://outnow.josemoreira.pt
-  - name: suggestions
-    url: https://suggestions.josemoreira.pt
-  - name: stick a snek
-    url: https://stickasnek.com
-  - name: snek forge
-    url: https://snekforge.com
-  - name: only sneks
-    url: https://onlysneks.club
-  - name: Kanban Jam
-    url: https://boards.josemoreira.pt
-  - name: Linkding Jam  
-    url: https://links.josemoreira.pt
   
-delay: 5000
+delay: 60000
 
 assignees:
   - giventofly
