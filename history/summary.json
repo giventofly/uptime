@@ -27,9 +27,9 @@
     "slug": "bookmarks-josemoreira-pt",
     "status": "down",
     "uptime": "99.86%",
-    "uptimeDay": "88.30%",
+    "uptimeDay": "88.29%",
     "uptimeWeek": "98.33%",
-    "uptimeMonth": "99.62%",
+    "uptimeMonth": "99.61%",
     "uptimeYear": "99.86%",
     "time": 651,
     "timeDay": 681,
@@ -37,7 +37,7 @@
     "timeMonth": 931,
     "timeYear": 651,
     "dailyMinutesDown": {
-      "2025-01-08": 168
+      "2025-01-08": 169
     }
   },
   {
@@ -176,11 +176,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rss.josemoreira.pt.ico",
     "slug": "rss-josemoreira-pt",
     "status": "down",
-    "uptime": "0.23%",
-    "uptimeDay": "0.23%",
-    "uptimeWeek": "0.23%",
-    "uptimeMonth": "0.23%",
-    "uptimeYear": "0.23%",
+    "uptime": "0.22%",
+    "uptimeDay": "0.22%",
+    "uptimeWeek": "0.22%",
+    "uptimeMonth": "0.22%",
+    "uptimeYear": "0.22%",
     "time": 1329,
     "timeDay": 1329,
     "timeWeek": 1329,
@@ -196,11 +196,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/screenshots.josemoreira.pt.ico",
     "slug": "screenshots-josemoreira-pt",
     "status": "down",
-    "uptime": "0.33%",
-    "uptimeDay": "0.33%",
-    "uptimeWeek": "0.33%",
-    "uptimeMonth": "0.33%",
-    "uptimeYear": "0.33%",
+    "uptime": "0.32%",
+    "uptimeDay": "0.32%",
+    "uptimeWeek": "0.32%",
+    "uptimeMonth": "0.32%",
+    "uptimeYear": "0.32%",
     "time": 682,
     "timeDay": 682,
     "timeWeek": 682,
@@ -283,7 +283,7 @@
     "timeMonth": 1202,
     "timeYear": 1202,
     "dailyMinutesDown": {
-      "2025-01-08": 7
+      "2025-01-08": 8
     }
   },
   {
@@ -349,11 +349,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/unsplash.josemoreira.pt.ico",
     "slug": "unsplash-josemoreira-pt",
     "status": "down",
-    "uptime": "0.40%",
-    "uptimeDay": "0.40%",
-    "uptimeWeek": "0.40%",
-    "uptimeMonth": "0.40%",
-    "uptimeYear": "0.40%",
+    "uptime": "0.27%",
+    "uptimeDay": "0.27%",
+    "uptimeWeek": "0.27%",
+    "uptimeMonth": "0.27%",
+    "uptimeYear": "0.27%",
     "time": 443,
     "timeDay": 443,
     "timeWeek": 443,
@@ -412,7 +412,7 @@
     "slug": "xs-josemoreira-pt",
     "status": "down",
     "uptime": "99.83%",
-    "uptimeDay": "88.31%",
+    "uptimeDay": "88.30%",
     "uptimeWeek": "98.33%",
     "uptimeMonth": "99.62%",
     "uptimeYear": "99.83%",
@@ -422,7 +422,7 @@
     "timeMonth": 844,
     "timeYear": 633,
     "dailyMinutesDown": {
-      "2025-01-08": 168,
+      "2025-01-08": 169,
       "2024-10-22": 44
     }
   }
