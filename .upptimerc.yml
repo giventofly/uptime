@@ -56,8 +56,6 @@ sites:
     url: https://wp.josemoreira.pt
   - name: xs.josemoreira.pt
     url: https://xs.josemoreira.pt
-  - name: vps.josemoreira.pt
-    url: https://vps.josemoreira.pt
   
 delay: 20000
 
