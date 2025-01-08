@@ -11,6 +11,9 @@ sites:
     url: https://www.josemoreira.pt
   - name: levvy.josemoreira.pt
     url: https://levvy.josemoreira.pt
+    expectedStatusCodes:
+      - 200
+      - 401
   - name: Linkding Jam
     url: https://links.josemoreira.pt
   - name: log.josemoreira.pt
@@ -21,6 +24,9 @@ sites:
     url: https://outnow.josemoreira.pt
   - name: redis.josemoreira.pt
     url: https://redis.josemoreira.pt
+    expectedStatusCodes:
+      - 200
+      - 401
   - name: rss.josemoreira.pt
     url: https://rss.josemoreira.pt
   - name: screenshots.josemoreira.pt
@@ -41,6 +47,9 @@ sites:
     url: https://thepipestayslit.com
   - name: unsplash.josemoreira.pt
     url: https://unsplash.josemoreira.pt
+    expectedStatusCodes:
+      - 200
+      - 401
   - name: weather
     url: https://weather.josemoreira.pt
   - name: wp.josemoreira.pt
