@@ -48,7 +48,7 @@ sites:
   - name: xs.josemoreira.pt
     url: https://xs.josemoreira.pt
   
-delay: 60000
+delay: 20000
 
 assignees:
   - giventofly
