@@ -7,6 +7,8 @@ sites:
     url: https://boards.josemoreira.pt
   - name: bookmarks.josemoreira.pt
     url: https://bookmarks.josemoreira.pt
+  - name: Bonsai Timeline
+    url: https://bonsai.josemoreira.pt
   - name: josemoreira.pt
     url: https://www.josemoreira.pt
   - name: levvy.josemoreira.pt
@@ -58,6 +60,10 @@ sites:
     url: https://xs.josemoreira.pt
   - name: snekverse
     url: https://snek.josemoreira.pt
+  - name: why snek?
+    url: https://whysnek.com
+  - name: snekforge
+    url: https://snekforge.com
   
 delay: 20000
 
