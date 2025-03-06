@@ -66,6 +66,8 @@ sites:
     url: https://snekforge.com
   - name: 5into75
     url: https://5into75.com
+  - name: vps
+    url: https://vps.josemoreira.pt
   
 delay: 20000
 
