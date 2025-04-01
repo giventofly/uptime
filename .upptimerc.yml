@@ -20,8 +20,6 @@ sites:
     url: https://links.josemoreira.pt
   - name: log.josemoreira.pt
     url: https://log.josemoreira.pt
-  - name: only sneks
-    url: https://onlysneks.club
   - name: outnow
     url: https://outnow.josemoreira.pt
   - name: redis.josemoreira.pt
@@ -66,6 +64,10 @@ sites:
     url: https://snekregret.com
   - name: 5into75
     url: https://5into75.com
+  - name: snek forge
+    url: https://snekforge.com
+  - name: snek regret
+    url: https://snekregret.com
 
   
 delay: 20000
