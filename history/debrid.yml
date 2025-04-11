@@ -1,7 +1,7 @@
 url: https://debrid.josemoreira.pt
-status: up
-code: 200
-responseTime: 883
-lastUpdated: 2025-04-11T07:56:11.716Z
+status: down
+code: 401
+responseTime: 665
+lastUpdated: 2025-04-11T08:49:01.837Z
 startTime: 2025-04-11T07:56:10.829Z
 generator: Upptime <https://github.com/upptime/upptime>
