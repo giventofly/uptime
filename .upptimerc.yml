@@ -70,8 +70,6 @@ sites:
     url: https://snekregret.com
   - name: Jackett
     url: https://jackett.josemoreira.pt
-  - name: Debrid
-    url: https://debrid.josemoreira.pt
     expectedStatusCodes:
       - 200
       - 401
