@@ -72,7 +72,9 @@ sites:
     url: https://jackett.josemoreira.pt
   - name: Debrid
     url: https://debrid.josemoreira.pt
-
+    expectedStatusCodes:
+      - 200
+      - 401
   
 delay: 20000
 
