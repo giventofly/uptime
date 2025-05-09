@@ -68,11 +68,7 @@ sites:
     url: https://snekforge.com
   - name: snek regret
     url: https://snekregret.com
-  - name: Jackett
-    url: https://jackett.josemoreira.pt
-    expectedStatusCodes:
-      - 200
-      - 401
+
   
 delay: 20000
 
