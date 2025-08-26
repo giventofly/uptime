@@ -345,18 +345,20 @@
     "url": "https://snektimeline.com",
     "icon": "https://icons.duckduckgo.com/ip3/snektimeline.com.ico",
     "slug": "snek-timeline",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.71%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 387,
     "timeDay": 175,
     "timeWeek": 416,
     "timeMonth": 399,
     "timeYear": 387,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-08-26": 4
+    }
   },
   {
     "name": "the pipe stays lit",
