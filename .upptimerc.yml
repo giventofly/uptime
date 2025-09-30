@@ -11,11 +11,6 @@ sites:
     url: https://jambonsai.com
   - name: josemoreira.pt
     url: https://www.josemoreira.pt
-  - name: levvy.josemoreira.pt
-    url: https://levvy.josemoreira.pt
-    expectedStatusCodes:
-      - 200
-      - 401
   - name: Linkding Jam
     url: https://links.josemoreira.pt
   - name: log.josemoreira.pt
@@ -45,11 +40,6 @@ sites:
     url: https://snektimeline.com
   - name: the pipe stays lit
     url: https://thepipestayslit.com
-  - name: unsplash.josemoreira.pt
-    url: https://unsplash.josemoreira.pt
-    expectedStatusCodes:
-      - 200
-      - 401
   - name: weather
     url: https://weather.josemoreira.pt
   - name: wp.josemoreira.pt
@@ -66,8 +56,6 @@ sites:
     url: https://5into75.com
   - name: snek forge
     url: https://snekforge.com
-  - name: snek regret
-    url: https://snekregret.com
 
   
 delay: 20000
