@@ -10,15 +10,18 @@ sites:
   - name: JAM's Bonsai 
     url: https://jambonsai.com
   - name: josemoreira.pt
-    url: https://www.josemoreira.pt
+    url: https://josemoreira.pt
   - name: Linkding Jam
     url: https://links.josemoreira.pt
-  - name: log.josemoreira.pt
-    url: https://log.josemoreira.pt
   - name: outnow
     url: https://outnow.josemoreira.pt
   - name: redis.josemoreira.pt
     url: https://redis.josemoreira.pt
+    expectedStatusCodes:
+      - 200
+      - 400
+  - name: wallets.josemoreira.pt
+    url: https://wallets.josemoreira.pt
     expectedStatusCodes:
       - 200
       - 401
@@ -44,8 +47,6 @@ sites:
     url: https://weather.josemoreira.pt
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
-  - name: xs.josemoreira.pt
-    url: https://xs.josemoreira.pt
   - name: snekverse
     url: https://snek.josemoreira.pt
   - name: why snek?
