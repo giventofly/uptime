@@ -1,7 +1,7 @@
 url: https://weather.josemoreira.pt
-status: down
-code: 500
-responseTime: 80
-lastUpdated: 2025-11-18T12:40:47.514Z
+status: up
+code: 200
+responseTime: 644
+lastUpdated: 2025-11-18T14:37:26.165Z
 startTime: 2024-10-15T17:09:02.010Z
 generator: Upptime <https://github.com/upptime/upptime>
