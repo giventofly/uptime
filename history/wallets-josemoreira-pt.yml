@@ -1,7 +1,7 @@
 url: https://wallets.josemoreira.pt
-status: down
-code: 500
-responseTime: 171
-lastUpdated: 2025-11-18T11:47:16.055Z
+status: up
+code: 401
+responseTime: 535
+lastUpdated: 2025-11-18T12:15:48.028Z
 startTime: 2025-11-07T16:06:54.289Z
 generator: Upptime <https://github.com/upptime/upptime>
