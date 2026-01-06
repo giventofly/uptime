@@ -57,6 +57,8 @@ sites:
     url: https://5into75.com
   - name: snek forge
     url: https://snekforge.com
+  - name: snek culture
+    url: https://snekculture.com
 
   
 delay: 20000
