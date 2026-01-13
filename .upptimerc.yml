@@ -3,8 +3,6 @@ owner: giventofly # Your GitHub organization or username, where this repository 
 repo: uptime # The name of this repository
 
 sites:
-  - name: Kanban Jam
-    url: https://boards.josemoreira.pt
   - name: bookmarks.josemoreira.pt
     url: https://bookmarks.josemoreira.pt
   - name: JAM's Bonsai 
@@ -20,11 +18,6 @@ sites:
     expectedStatusCodes:
       - 200
       - 400
-  - name: wallets.josemoreira.pt
-    url: https://wallets.josemoreira.pt
-    expectedStatusCodes:
-      - 200
-      - 401
   - name: rss.josemoreira.pt
     url: https://rss.josemoreira.pt
   - name: screenshots.josemoreira.pt
@@ -43,8 +36,6 @@ sites:
     url: https://snektimeline.com
   - name: the pipe stays lit
     url: https://thepipestayslit.com
-  - name: weather
-    url: https://weather.josemoreira.pt
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
   - name: snekverse
@@ -53,15 +44,13 @@ sites:
     url: https://whysnek.com
   - name: snekregret
     url: https://snekregret.com
-  - name: 5into75
-    url: https://5into75.com
   - name: snek forge
     url: https://snekforge.com
   - name: snek culture
     url: https://snekculture.com
 
   
-delay: 20000
+delay: 2000
 
 assignees:
   - giventofly
@@ -93,6 +82,6 @@ workflowSchedule:
   summary: "0 0 * * *"
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
-  uptime: "*/20 * * * *"
+  uptime: "0 */2 * * *"
 
 user-agent: github-checker
