@@ -18,6 +18,7 @@ sites:
     expectedStatusCodes:
       - 200
       - 400
+      - 401
   - name: rss.josemoreira.pt
     url: https://rss.josemoreira.pt
   - name: screenshots.josemoreira.pt
