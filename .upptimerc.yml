@@ -49,6 +49,9 @@ sites:
     url: https://snekforge.com
   - name: snek culture
     url: https://snekculture.com
+    expectedStatusCodes:
+      - 200
+      - 403
 
   
 delay: 2000
