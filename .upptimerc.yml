@@ -21,8 +21,6 @@ sites:
       - 401
   - name: rss.josemoreira.pt
     url: https://rss.josemoreira.pt
-  - name: screenshots.josemoreira.pt
-    url: https://screenshots.josemoreira.pt
   - name: snek board
     url: https://snekboard.com
   - name: snek forge
@@ -39,8 +37,6 @@ sites:
     url: https://thepipestayslit.com
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
-  - name: snekverse
-    url: https://snek.josemoreira.pt
   - name: why snek?
     url: https://whysnek.com
   - name: snekregret
