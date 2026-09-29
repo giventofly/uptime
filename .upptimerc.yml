@@ -71,7 +71,7 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   theme: dark
-  themeUrl: /nord.css
+  themeUrl: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/nord.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
