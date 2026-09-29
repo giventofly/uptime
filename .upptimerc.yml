@@ -41,8 +41,6 @@ sites:
     url: https://whysnek.com
   - name: snekregret
     url: https://snekregret.com
-  - name: snek forge
-    url: https://snekforge.com
   - name: snek culture
     url: https://snekculture.com
     expectedStatusCodes:
@@ -71,6 +69,7 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   theme: dark
+  themeUrl: /nord.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration

@@ -1,0 +1,27 @@
+/* Nord theme for Upptime - https://www.nordtheme.com */
+:root {
+  --body-background-color: #2e3440; /* nord0 */
+  --body-text-color: #eceff4; /* nord6 */
+  --card-background-color: #3b4252; /* nord1 */
+  --nav-background-color: #3b4252; /* nord1 */
+  --nav-border-bottom-color: #4c566a; /* nord3 */
+  --nav-current-border-bottom-color: #88c0d0; /* nord8 */
+  --card-border-color: #4c566a; /* nord3 */
+  --down-border-left-color: #bf616a; /* nord11 */
+  --down-background-color: #5c3a41; /* darkened nord11 */
+  --degraded-border-left-color: #ebcb8b; /* nord13 */
+  --up-border-left-color: #a3be8c; /* nord14 */
+  --tag-color: #2e3440; /* nord0 */
+  --tag-up-background-color: #a3be8c; /* nord14 */
+  --tag-down-background-color: #bf616a; /* nord11 */
+  --tag-degraded-background-color: #ebcb8b; /* nord13 */
+  --change-background-color: #ebcb8b; /* nord13 */
+  --error-button-border-color: #5e81ac; /* nord10 */
+  --error-button-background-color: #81a1c1; /* nord9 */
+  --error-button-color: #2e3440; /* nord0 */
+  --submit-button-border-color: #5e81ac; /* nord10 */
+  --submit-button-background-color: #81a1c1; /* nord9 */
+  --submit-button-color: #2e3440; /* nord0 */
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
