@@ -27,8 +27,6 @@ sites:
     url: https://stickasnek.com
   - name: stats.stickasnek.com
     url: https://stats.stickasnek.com
-  - name: suggestions
-    url: https://suggestions.josemoreira.pt
   - name: snek timeline
     url: https://snektimeline.com
   - name: the pipe stays lit
