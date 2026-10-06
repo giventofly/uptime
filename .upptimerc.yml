@@ -39,8 +39,10 @@ sites:
     url: https://snekregret.com
   - name: 5into75
     url: https://5into75.com
+    icon: https://5into75.com/favicon.ico
   - name: LemonFlicks
     url: https://lemonflicks.com
+    icon: https://lemonflicks.com/favicon.svg
   - name: snek culture
     url: https://snekculture.com
     expectedStatusCodes:
