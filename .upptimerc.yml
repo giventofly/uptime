@@ -50,6 +50,7 @@ sites:
       - 403
   - name: Maps of Rage
     url: https://rage.josemoreira.pt
+    icon: https://rage.josemoreira.pt/assets/icons/favicon-32.png
 
   
 delay: 2000
