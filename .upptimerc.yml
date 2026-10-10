@@ -51,6 +51,8 @@ sites:
   - name: Maps of Rage
     url: https://rage.josemoreira.pt
     icon: https://rage.josemoreira.pt/assets/icons/favicon-32.png
+  - name: Mega World Mania
+    url: https://megaworldmania.josemoreira.pt
 
   
 delay: 2000
