@@ -48,6 +48,8 @@ sites:
     expectedStatusCodes:
       - 200
       - 403
+  - name: Maps of Rage
+    url: https://rage.josemoreira.pt
 
   
 delay: 2000
