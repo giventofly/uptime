@@ -5,12 +5,14 @@ repo: uptime # The name of this repository
 sites:
   - name: JAM's Bonsai 
     url: https://jambonsai.com
+    icon: https://jambonsai.com/assets/img/favicon.svg
   - name: josemoreira.pt
     url: https://josemoreira.pt
   - name: Linkding Jam
     url: https://links.josemoreira.pt
   - name: outnow
     url: https://outnow.josemoreira.pt
+    icon: https://outnow.josemoreira.pt/assets/icons/logo.svg
   - name: redis.josemoreira.pt
     url: https://redis.josemoreira.pt
     expectedStatusCodes:
@@ -21,16 +23,20 @@ sites:
     url: https://rss.josemoreira.pt
   - name: snek board
     url: https://snekboard.com
+    icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ca.svg
   - name: snek forge
     url: https://snekforge.com
   - name: stick a snek
     url: https://stickasnek.com
+    icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f40d.svg
   - name: stats.stickasnek.com
     url: https://stats.stickasnek.com
   - name: snek timeline
     url: https://snektimeline.com
+    icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f40d.svg
   - name: the pipe stays lit
     url: https://thepipestayslit.com
+    icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f525.svg
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
   - name: why snek?
@@ -45,6 +51,7 @@ sites:
     icon: https://lemonflicks.com/favicon.svg
   - name: snek culture
     url: https://snekculture.com
+    icon: https://snekculture.com/favicon-96x96.png
     expectedStatusCodes:
       - 200
       - 403
