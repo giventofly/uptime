@@ -455,18 +455,18 @@
     "icon": "https://rage.josemoreira.pt/assets/icons/favicon-32.png",
     "slug": "maps-of-rage",
     "status": "down",
-    "uptime": "99.29%",
-    "uptimeDay": "99.29%",
-    "uptimeWeek": "99.29%",
-    "uptimeMonth": "99.29%",
-    "uptimeYear": "99.29%",
+    "uptime": "98.31%",
+    "uptimeDay": "98.31%",
+    "uptimeWeek": "98.31%",
+    "uptimeMonth": "98.31%",
+    "uptimeYear": "98.31%",
     "time": 604,
     "timeDay": 604,
     "timeWeek": 604,
     "timeMonth": 604,
     "timeYear": 604,
     "dailyMinutesDown": {
-      "2026-10-11": 6
+      "2026-10-11": 14
     }
   },
   {
