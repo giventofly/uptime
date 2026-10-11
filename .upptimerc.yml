@@ -87,7 +87,7 @@ status-website:
   i18n:
     overallUptime: "$UPTIME"
     averageResponseTime: "$TIMEms"
-  themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/nord.css
+  themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/tokyo-night.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
