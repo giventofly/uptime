@@ -84,6 +84,21 @@ h2 {
   padding: 0 0.15rem;
 }
 
+/* Small response-time chart between the name and the numbers */
+.live-status > article::before {
+  content: "";
+  order: 1;
+  flex: 0 0 9rem;
+  height: 1.5rem;
+  background-image: var(--background);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.15rem;
+}
+.live-status > article > div {
+  order: 2;
+}
+
 /* Status dot before the name */
 .live-status > article h4::before {
   content: "";
@@ -119,5 +134,8 @@ h2 {
   .live-status > article {
     gap: 0.6rem;
     padding: 0.35rem 0.5rem;
+  }
+  .live-status > article::before {
+    flex-basis: 3.5rem;
   }
 }
