@@ -454,18 +454,20 @@
     "url": "https://rage.josemoreira.pt",
     "icon": "https://rage.josemoreira.pt/assets/icons/favicon-32.png",
     "slug": "maps-of-rage",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.91%",
+    "uptimeDay": "99.91%",
+    "uptimeWeek": "99.91%",
+    "uptimeMonth": "99.91%",
+    "uptimeYear": "99.91%",
     "time": 604,
     "timeDay": 604,
     "timeWeek": 604,
     "timeMonth": 604,
     "timeYear": 604,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-10-11": 1
+    }
   },
   {
     "name": "Mega World Mania",
