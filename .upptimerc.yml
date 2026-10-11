@@ -83,14 +83,15 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   theme: dark
-  # Short labels for the compact cards
-  i18n:
-    overallUptime: "$UPTIME"
-    averageResponseTime: "$TIMEms"
   themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/tokyo-night.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
+
+# Short labels for the compact status rows
+i18n:
+  overallUptime: "$UPTIME"
+  averageResponseTime: "$TIMEms"
 
 workflowSchedule:
   graphs: "0 0 * * *"
