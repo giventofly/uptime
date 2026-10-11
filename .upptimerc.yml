@@ -76,6 +76,10 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   theme: dark
+  # Short labels for the compact cards
+  i18n:
+    overallUptime: "$UPTIME uptime"
+    averageResponseTime: "$TIMEms"
   themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/nord.css
 
 # Upptime also supports notifications, assigning issues, and more

@@ -25,3 +25,90 @@
   --graph-opacity: 1;
   --graph-filter: none;
 }
+
+/* ---------- Compact layout ---------- */
+
+/* Use more of the screen width */
+main.container,
+nav .container {
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+/* Slimmer navbar */
+nav {
+  margin-bottom: 1rem !important;
+}
+nav ul a {
+  padding: 0.75rem 1rem !important;
+}
+nav .logo img {
+  height: 2rem !important;
+}
+header {
+  margin-bottom: 1rem !important;
+}
+section + h2,
+h2 {
+  margin-top: 1rem;
+}
+
+/* Monitors as a dense grid of small cards */
+.live-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.5rem;
+}
+.live-status > article {
+  margin: 0 !important;
+  padding: 0.5rem 0.75rem;
+  border-left-width: 0.35rem !important;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  background-image: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.6rem;
+}
+.live-status > article h4 {
+  flex: 1 0 100%;
+  margin: 0 0 0.15rem 0;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-status > article > div {
+  opacity: 0.8;
+}
+.live-status .data {
+  padding: 0 0.15rem;
+}
+
+/* Status dot before the name */
+.live-status > article h4::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: var(--up-border-left-color);
+}
+.live-status > article.degraded h4::before {
+  background: var(--degraded-border-left-color);
+}
+.live-status > article.down h4::before {
+  background: var(--down-border-left-color);
+}
+
+/* Problems first and highlighted */
+.live-status > article.degraded {
+  order: -1;
+}
+.live-status > article.down {
+  order: -2;
+  background-color: var(--down-background-color);
+}
