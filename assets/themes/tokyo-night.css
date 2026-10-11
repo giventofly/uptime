@@ -1,0 +1,31 @@
+/* Tokyo Night theme for Upptime (compact layout) */
+@import url("../compact-layout.css");
+
+:root {
+  --body-background-color: #1a1b26;
+  --body-text-color: #c0caf5;
+  --card-background-color: #24283b;
+  --card-border-color: #414868;
+  --nav-background-color: #16161e;
+  --nav-border-bottom-color: #414868;
+  --nav-current-border-bottom-color: #7aa2f7;
+  --up-border-left-color: #9ece6a;
+  --down-border-left-color: #f7768e;
+  --down-background-color: #4a2a37;
+  --degraded-border-left-color: #e0af68;
+  --tag-color: #1a1b26;
+  --tag-up-background-color: #9ece6a;
+  --tag-down-background-color: #f7768e;
+  --tag-degraded-background-color: #e0af68;
+  --change-background-color: #e0af68;
+  --code-color: #c0caf5;
+  --code-background-color: #24283b;
+  --error-button-border-color: #7aa2f7;
+  --error-button-background-color: #7aa2f7;
+  --error-button-color: #1a1b26;
+  --submit-button-border-color: #7aa2f7;
+  --submit-button-background-color: #7aa2f7;
+  --submit-button-color: #1a1b26;
+  --graph-opacity: 1;
+  --graph-filter: hue-rotate(52deg);
+}

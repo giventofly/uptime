@@ -1,0 +1,31 @@
+/* Catppuccin Mocha theme for Upptime (compact layout) */
+@import url("../compact-layout.css");
+
+:root {
+  --body-background-color: #1e1e2e;
+  --body-text-color: #cdd6f4;
+  --card-background-color: #313244;
+  --card-border-color: #45475a;
+  --nav-background-color: #181825;
+  --nav-border-bottom-color: #45475a;
+  --nav-current-border-bottom-color: #cba6f7;
+  --up-border-left-color: #a6e3a1;
+  --down-border-left-color: #f38ba8;
+  --down-background-color: #4a2f3d;
+  --degraded-border-left-color: #f9e2af;
+  --tag-color: #1e1e2e;
+  --tag-up-background-color: #a6e3a1;
+  --tag-down-background-color: #f38ba8;
+  --tag-degraded-background-color: #f9e2af;
+  --change-background-color: #f9e2af;
+  --code-color: #cdd6f4;
+  --code-background-color: #313244;
+  --error-button-border-color: #cba6f7;
+  --error-button-background-color: #cba6f7;
+  --error-button-color: #1e1e2e;
+  --submit-button-border-color: #cba6f7;
+  --submit-button-background-color: #cba6f7;
+  --submit-button-color: #1e1e2e;
+  --graph-opacity: 1;
+  --graph-filter: hue-rotate(108deg);
+}
