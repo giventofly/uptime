@@ -2,7 +2,7 @@
   {
     "name": "JAM's Bonsai",
     "url": "https://jambonsai.com",
-    "icon": "https://icons.duckduckgo.com/ip3/jambonsai.com.ico",
+    "icon": "https://jambonsai.com/assets/img/favicon.svg",
     "slug": "jam-s-bonsai",
     "status": "up",
     "uptime": "99.99%",
@@ -76,7 +76,7 @@
   {
     "name": "outnow",
     "url": "https://outnow.josemoreira.pt",
-    "icon": "https://icons.duckduckgo.com/ip3/outnow.josemoreira.pt.ico",
+    "icon": "https://outnow.josemoreira.pt/assets/icons/logo.svg",
     "slug": "outnow",
     "status": "up",
     "uptime": "99.98%",
@@ -175,7 +175,7 @@
   {
     "name": "snek board",
     "url": "https://snekboard.com",
-    "icon": "https://icons.duckduckgo.com/ip3/snekboard.com.ico",
+    "icon": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ca.svg",
     "slug": "snek-board",
     "status": "up",
     "uptime": "99.65%",
@@ -216,7 +216,7 @@
   {
     "name": "stick a snek",
     "url": "https://stickasnek.com",
-    "icon": "https://icons.duckduckgo.com/ip3/stickasnek.com.ico",
+    "icon": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f40d.svg",
     "slug": "stick-a-snek",
     "status": "up",
     "uptime": "99.98%",
@@ -259,7 +259,7 @@
   {
     "name": "snek timeline",
     "url": "https://snektimeline.com",
-    "icon": "https://icons.duckduckgo.com/ip3/snektimeline.com.ico",
+    "icon": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f40d.svg",
     "slug": "snek-timeline",
     "status": "up",
     "uptime": "99.98%",
@@ -279,7 +279,7 @@
   {
     "name": "the pipe stays lit",
     "url": "https://thepipestayslit.com",
-    "icon": "https://icons.duckduckgo.com/ip3/thepipestayslit.com.ico",
+    "icon": "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f525.svg",
     "slug": "the-pipe-stays-lit",
     "status": "up",
     "uptime": "99.96%",
@@ -428,7 +428,7 @@
   {
     "name": "snek culture",
     "url": "https://snekculture.com",
-    "icon": "https://icons.duckduckgo.com/ip3/snekculture.com.ico",
+    "icon": "https://snekculture.com/favicon-96x96.png",
     "slug": "snek-culture",
     "status": "up",
     "uptime": "99.02%",
@@ -455,18 +455,18 @@
     "icon": "https://rage.josemoreira.pt/assets/icons/favicon-32.png",
     "slug": "maps-of-rage",
     "status": "down",
-    "uptime": "98.31%",
-    "uptimeDay": "98.31%",
-    "uptimeWeek": "98.31%",
-    "uptimeMonth": "98.31%",
-    "uptimeYear": "98.31%",
+    "uptime": "97.80%",
+    "uptimeDay": "97.80%",
+    "uptimeWeek": "97.80%",
+    "uptimeMonth": "97.80%",
+    "uptimeYear": "97.80%",
     "time": 604,
     "timeDay": 604,
     "timeWeek": 604,
     "timeMonth": 604,
     "timeYear": 604,
     "dailyMinutesDown": {
-      "2026-10-11": 14
+      "2026-10-11": 18
     }
   },
   {
