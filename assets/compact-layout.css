@@ -1,5 +1,11 @@
 /* Compact status page layout, shared by all themes in assets/themes/ */
 
+/* A bit wider than the default 800px so each row fits on one line */
+main.container,
+nav .container {
+  max-width: 1040px;
+}
+
 /* Slimmer navbar */
 nav {
   margin-bottom: 1rem !important;
