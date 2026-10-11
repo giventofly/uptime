@@ -450,26 +450,6 @@
     }
   },
   {
-    "name": "Maps of Rage",
-    "url": "https://rage.josemoreira.pt",
-    "icon": "https://rage.josemoreira.pt/assets/icons/favicon-32.png",
-    "slug": "maps-of-rage",
-    "status": "down",
-    "uptime": "64.61%",
-    "uptimeDay": "64.61%",
-    "uptimeWeek": "64.61%",
-    "uptimeMonth": "64.61%",
-    "uptimeYear": "64.61%",
-    "time": 494,
-    "timeDay": 494,
-    "timeWeek": 494,
-    "timeMonth": 494,
-    "timeYear": 494,
-    "dailyMinutesDown": {
-      "2026-10-11": 446
-    }
-  },
-  {
     "name": "Mega World Mania",
     "url": "https://megaworldmania.josemoreira.pt",
     "icon": "https://icons.duckduckgo.com/ip3/megaworldmania.josemoreira.pt.ico",
