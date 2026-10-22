@@ -39,6 +39,8 @@ sites:
     icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f525.svg
   - name: wp.josemoreira.pt
     url: https://wp.josemoreira.pt
+  - name: blog.josemoreira.pt
+    url: https://blog.josemoreira.pt
   - name: why snek?
     url: https://whysnek.com
   - name: snekregret
