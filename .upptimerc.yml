@@ -57,6 +57,8 @@ sites:
     expectedStatusCodes:
       - 200
       - 403
+  - name: Odd Chronicles
+    url: https://oddchronicles.com
   - name: Mega World Mania
     url: https://megaworldmania.josemoreira.pt
 
