@@ -20,7 +20,7 @@ sites:
       - 400
       - 401
   - name: rss.josemoreira.pt
-    url: https://rss.josemoreira.pt
+    url: https://rss.josemoreira.pt/p/i/
   - name: snek board
     url: https://snekboard.com
     icon: https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ca.svg
