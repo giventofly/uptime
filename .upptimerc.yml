@@ -61,6 +61,8 @@ sites:
     url: https://oddchronicles.com
   - name: Mega World Mania
     url: https://megaworldmania.josemoreira.pt
+  - name: FIRE calculator
+    url: https://fire.josemoreira.pt
 
   
 delay: 2000
