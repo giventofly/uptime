@@ -303,11 +303,11 @@ footer {
     padding: 0 1rem;
   }
   main.container::before {
-    left: -0.5rem;
+    left: 0.25rem;
     width: 4rem;
   }
   main.container::after {
-    right: -0.25rem;
+    right: 0.25rem;
     width: 3.5rem;
   }
   .live-status {
