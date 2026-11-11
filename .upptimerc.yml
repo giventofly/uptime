@@ -86,7 +86,7 @@ status-website:
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
   theme: dark
-  themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/tokyo-night.css
+  themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/casa-bento.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
