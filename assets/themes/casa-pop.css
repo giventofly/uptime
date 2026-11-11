@@ -1,0 +1,408 @@
+/* Casa Pop theme for Upptime: Casa colours and taped notes with Snek Pop's thick outlines and hard shadows */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Mona+Sans:wght@400;600&family=Titan+One&display=swap");
+
+:root {
+  --bg: #e3e9f2;
+  --ink: #151920;
+  --dim: #556274;
+  --paper: #eef3f8;
+  --mark: #f6c945;
+  --petrol: #0f4c55;
+  --blue: #4357c4;
+  --burnt: #c8492f;
+  --mint: #86eee3;
+  --tape-light: rgba(255, 255, 255, 0.6);
+  --tape-yellow: rgba(246, 201, 69, 0.75);
+  --stroke: 3px;
+  --shadow: 5px 5px 0 var(--ink);
+
+  --display: "Titan One", Georgia, serif;
+  --names: "Bricolage Grotesque", "Mona Sans", system-ui, sans-serif;
+  --text: "Mona Sans", system-ui, sans-serif;
+
+  --body-background-color: var(--bg);
+  --body-text-color: var(--ink);
+  --card-background-color: var(--paper);
+  --card-border-color: var(--ink);
+  --nav-background-color: transparent;
+  --nav-border-bottom-color: transparent;
+  --nav-current-border-bottom-color: transparent;
+  --up-border-left-color: var(--ink);
+  --down-border-left-color: var(--ink);
+  --down-background-color: var(--burnt);
+  --degraded-border-left-color: var(--ink);
+  --tag-color: var(--ink);
+  --tag-up-background-color: var(--mint);
+  --tag-down-background-color: var(--burnt);
+  --tag-degraded-background-color: var(--mark);
+  --change-background-color: var(--mark);
+  --code-color: var(--ink);
+  --code-background-color: var(--paper);
+  --error-button-border-color: var(--ink);
+  --error-button-background-color: var(--petrol);
+  --error-button-color: var(--paper);
+  --submit-button-border-color: var(--ink);
+  --submit-button-background-color: var(--petrol);
+  --submit-button-color: var(--paper);
+  --graph-opacity: 1;
+  --graph-filter: grayscale(1) contrast(2);
+}
+
+html {
+  overflow-x: clip;
+}
+body {
+  font-family: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+main.container,
+nav .container {
+  max-width: 1180px;
+}
+
+/* Navbar: petrol name tag, outlined pills */
+nav {
+  margin-bottom: 1.75rem !important;
+  padding-top: 0.9rem !important;
+  border-bottom: 0 !important;
+  font-family: var(--names);
+  font-weight: 700 !important;
+}
+nav .logo {
+  padding: 0.3rem 0.85rem 0.3rem 0.35rem !important;
+  border: var(--stroke) solid var(--ink);
+  background: var(--petrol);
+  color: var(--paper);
+  font-size: 1.15rem;
+  box-shadow: 4px 4px 0 var(--ink);
+  transform: rotate(-2deg);
+}
+nav .logo img {
+  height: 2rem !important;
+  margin-right: 0.6rem !important;
+  border-radius: 0 !important;
+}
+nav ul {
+  gap: 0.6rem;
+}
+nav ul a {
+  padding: 0.35rem 0.9rem !important;
+  border: var(--stroke) solid var(--ink) !important;
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+nav ul a[aria-current] {
+  background: var(--mark);
+}
+nav ul a:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+nav ul a:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* Overall status: an outlined paper note, taped down, with a round sticker */
+main.container {
+  position: relative;
+}
+main.container::before,
+main.container::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  height: 1.7rem;
+  background: var(--tape-yellow);
+  pointer-events: none;
+}
+main.container::before {
+  top: 0.4rem;
+  left: 0.75rem;
+  width: 5.5rem;
+  transform: rotate(-36deg);
+}
+main.container::after {
+  top: 0.2rem;
+  left: 46%;
+  width: 6rem;
+  transform: rotate(3deg);
+}
+header {
+  margin-bottom: 0 !important;
+}
+header::after {
+  content: "checked every 2 h";
+  position: absolute;
+  z-index: 4;
+  top: -0.25rem;
+  right: 2.25rem;
+  display: grid;
+  place-items: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border: var(--stroke) solid var(--ink);
+  border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 4px 4px 0 var(--ink);
+  color: var(--ink);
+  font-family: var(--names);
+  font-size: 0.85rem;
+  font-weight: 800;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(12deg);
+}
+main.container > article.up {
+  margin: 1rem 0 3rem;
+  padding: clamp(1.75rem, 4.5vw, 3.25rem) clamp(1.5rem, 4.5vw, 3.25rem);
+  border: var(--stroke) solid var(--ink) !important;
+  border-radius: 0;
+  background: var(--paper);
+  box-shadow: 9px 9px 0 var(--petrol);
+  font-size: 0;
+  transform: rotate(-0.6deg);
+}
+main.container > article.up::before,
+main.container > article.up::after {
+  display: block;
+  width: fit-content;
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 8vw, 5.75rem);
+  line-height: 1.02;
+  color: var(--ink);
+}
+main.container > article.up::before {
+  content: "All systems";
+}
+main.container > article.up::after {
+  content: "operational.";
+  margin-left: -0.12em;
+  padding: 0 0.12em 0.04em;
+  background: var(--mark);
+}
+
+/* Section heading and period switch */
+main > .f {
+  margin-bottom: 1.6rem;
+}
+h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.f.r {
+  gap: 0.4rem;
+  font-family: var(--names);
+  font-size: 0.85rem;
+}
+.f.r label {
+  display: block;
+  margin: 0 !important;
+  padding: 0.2rem 0.7rem;
+  border: var(--stroke) solid var(--ink);
+  border-radius: 999px;
+  background: var(--paper);
+  font-weight: 700 !important;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.f.r label:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.f.r input:checked + label {
+  background: var(--petrol);
+  color: var(--paper);
+}
+
+/* Monitors: two columns of outlined notes in paper, petrol and blue, each taped on */
+.live-status {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem 1.5rem;
+}
+.live-status > article {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 !important;
+  padding: 0.85rem 1rem;
+  border: var(--stroke) solid var(--ink) !important;
+  border-radius: 0;
+  background-image: none !important;
+  background-color: var(--paper) !important;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  transform: rotate(-0.4deg);
+  transition: transform 0.14s, box-shadow 0.14s;
+}
+.live-status > article:nth-child(even) {
+  transform: rotate(0.4deg);
+}
+.live-status > article:nth-child(3n + 2) {
+  background-color: var(--petrol) !important;
+  color: var(--paper);
+}
+.live-status > article:nth-child(3n) {
+  background-color: var(--blue) !important;
+  color: var(--paper);
+}
+.live-status > article:hover {
+  transform: translate(-2px, -2px) rotate(0deg);
+  box-shadow: 7px 7px 0 var(--ink);
+}
+.live-status > article:active {
+  transform: translate(5px, 5px) rotate(0deg);
+  box-shadow: 0 0 0 var(--ink);
+}
+/* Tape strip on each note */
+.live-status > article::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -0.8rem;
+  left: 42%;
+  width: 3.75rem;
+  height: 1.15rem;
+  background: var(--tape-yellow);
+  transform: rotate(-4deg);
+  pointer-events: none;
+}
+.live-status > article:nth-child(even)::before {
+  left: 18%;
+  transform: rotate(5deg);
+}
+.live-status > article:nth-child(3n + 2)::before,
+.live-status > article:nth-child(3n)::before,
+.live-status > article.down::before {
+  background: var(--tape-light);
+}
+.live-status > article h4 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--names);
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.live-status > article h4 .icon {
+  width: 1.25rem;
+  height: 1.25rem !important;
+  object-fit: contain;
+  margin-right: 0.6rem !important;
+  transform: translateY(-0.1rem) !important;
+}
+.live-status > article::after {
+  content: "";
+  order: 1;
+  flex: 0 0 5.5rem;
+  height: 1.9rem;
+  background-color: currentColor;
+  -webkit-mask: var(--background) center / 100% 100% no-repeat;
+  mask: var(--background) center / 100% 100% no-repeat;
+}
+.live-status > article > div {
+  order: 2;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+/* Uptime as a sticker pill */
+.live-status > article > div:nth-of-type(1) {
+  padding: 0.1rem 0.55rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--mint);
+  color: var(--ink);
+  font-weight: 600;
+}
+.live-status > article > div:last-child {
+  min-width: 4.2rem;
+  text-align: right;
+}
+.live-status .data {
+  padding: 0 !important;
+}
+
+/* Problems first: burnt red for down, highlighter yellow for degraded */
+.live-status > article.degraded {
+  order: -1;
+  background-color: var(--mark) !important;
+  color: var(--ink);
+}
+.live-status > article.degraded > div:nth-of-type(1) {
+  background: var(--paper);
+}
+.live-status > article.down {
+  order: -2;
+  background-color: var(--burnt) !important;
+  color: var(--paper);
+}
+.live-status > article.down > div:nth-of-type(1) {
+  background: var(--paper);
+}
+
+footer {
+  margin-top: 3.5rem !important;
+  font-family: var(--names);
+  font-size: 0.8rem;
+  color: var(--dim);
+  opacity: 1 !important;
+}
+
+@media (max-width: 860px) {
+  .live-status {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.4rem;
+  }
+}
+@media (max-width: 560px) {
+  main.container {
+    padding: 0 1rem;
+  }
+  main.container::before {
+    left: 0.25rem;
+    width: 4rem;
+  }
+  header::after {
+    top: -0.75rem;
+    right: 0.5rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    padding: 0.5rem;
+    font-size: 0.62rem;
+  }
+  main.container > article.up {
+    padding-right: 4.5rem;
+  }
+  nav ul li:last-child {
+    display: none;
+  }
+  .live-status > article {
+    gap: 0.6rem;
+    padding: 0.75rem;
+  }
+  .live-status > article::after {
+    display: none;
+  }
+  .live-status > article h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
