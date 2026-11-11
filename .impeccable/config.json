@@ -8,6 +8,12 @@
         "value": "fraunces",
         "createdAt": "2026-11-10T10:31:15.245Z",
         "reason": "House font: josemoreira.pt and blog.josemoreira.pt already use Fraunces and the user asked for a theme matching those sites"
+      },
+      {
+        "rule": "overused-font",
+        "value": "mona sans",
+        "createdAt": "2026-11-11T03:29:00.343Z",
+        "reason": "House font: josemoreira.pt, blog.josemoreira.pt and jambonsai.com all use Mona Sans for body text and the user asked for themes matching those sites"
       }
     ]
   }
