@@ -1,5 +1,5 @@
 /* Casa Bento theme for Upptime: Casa colours and taped notes laid out as Bento tiles */
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Fraunces:wght@600&family=Mona+Sans:wght@400;600&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Fraunces:wght@600&family=Gabarito:wght@700;900&family=Mona+Sans:wght@400;600&family=Titan+One&display=swap");
 
 :root {
   --bg: #e3e9f2;
@@ -19,6 +19,7 @@
   --display: "Titan One", Georgia, serif;
   --title: "Fraunces", Georgia, serif;
   --names: "Bricolage Grotesque", "Mona Sans", system-ui, sans-serif;
+  --geo: "Gabarito", "Mona Sans", system-ui, sans-serif;
   --text: "Mona Sans", system-ui, sans-serif;
 
   --body-background-color: var(--bg);
@@ -62,52 +63,55 @@ nav .container {
   max-width: 1240px;
 }
 
-/* Navbar: a floating paper strip with a petrol name tag */
+/* Navbar: the blog.josemoreira.pt header. Tilted petrol name label, plain links, a square highlighter on the current page */
 nav {
-  padding: 1rem 1em 0 !important;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.75rem !important;
+  padding: 1.3rem 1em 0 !important;
   border-bottom: 0 !important;
-  font-family: var(--names);
+  overflow: visible !important;
+  font-family: var(--geo);
   font-weight: 700 !important;
 }
-nav .container {
-  padding: 0.4rem 0.45rem 0.4rem 0.45rem;
-  background: var(--paper);
-  box-shadow: var(--note-shadow);
-  border-radius: 999px;
-}
 nav .logo {
-  padding: 0.2rem 0.85rem 0.2rem 0.25rem !important;
-  border-radius: 999px;
+  margin-right: 1rem !important;
+  padding: 0.45rem 0.75rem 0.4rem 0.5rem !important;
   background: var(--petrol);
   color: var(--paper);
+  font-family: var(--geo);
+  font-size: 1.45rem;
+  font-weight: 900 !important;
+  line-height: 1;
+  transform: rotate(-2deg);
 }
 nav .logo img {
-  height: 1.9rem !important;
-  margin-right: 0.55rem !important;
-  border-radius: 50% !important;
+  height: 1.6rem !important;
+  margin-right: 0.5rem !important;
+  border-radius: 0 !important;
+}
+nav ul {
+  gap: 0.6rem;
 }
 nav ul a {
-  padding: 0.45rem 1rem !important;
+  padding: 0.4rem 0.55rem !important;
   border: 0 !important;
-  border-radius: 999px;
-  color: var(--dim);
-  transition: color 0.2s, background-color 0.2s;
+  color: var(--ink);
+  background: linear-gradient(var(--mark), var(--mark)) no-repeat 0 100% / 100% 0;
+  transition: background-size 0.2s;
 }
 nav ul a:hover {
-  color: var(--ink);
+  background-size: 100% 0.2rem;
 }
 nav ul a[aria-current] {
-  background: var(--mark);
-  color: var(--ink);
+  background-size: 100% 100%;
+  transform: rotate(-1.5deg);
 }
 
 /* Overall status: the hero tile, a taped paper note with a round sticker */
 main.container {
   position: relative;
 }
-main.container::before,
-main.container::after {
+main.container:has(> article.up)::before,
+main.container:has(> article.up)::after {
   content: "";
   position: absolute;
   z-index: 3;
@@ -115,13 +119,13 @@ main.container::after {
   background: var(--tape-yellow);
   pointer-events: none;
 }
-main.container::before {
+main.container:has(> article.up)::before {
   top: 0.15rem;
   left: 0.6rem;
   width: 5.5rem;
   transform: rotate(-35deg);
 }
-main.container::after {
+main.container:has(> article.up)::after {
   top: 0.05rem;
   right: 0.6rem;
   width: 4.75rem;
@@ -130,7 +134,7 @@ main.container::after {
 header {
   margin-bottom: 0 !important;
 }
-header::after {
+main.container:has(> article.up) > header::after {
   content: "checked every 2 h";
   position: absolute;
   z-index: 4;
@@ -363,6 +367,171 @@ h2 {
   color: var(--paper);
 }
 
+/* Status tags, darker than the default pastel */
+html body .tag {
+  padding: 0.3rem 0.65rem !important;
+  border-radius: 999px !important;
+  font-family: var(--names);
+  font-weight: 700;
+  font-size: 0.75em !important;
+  vertical-align: 0.25em !important;
+}
+html body .tag.up,
+html body .tag.closed {
+  background: var(--petrol) !important;
+  color: var(--paper);
+}
+html body .tag.down,
+html body .tag.open {
+  background: var(--burnt) !important;
+  color: var(--paper);
+}
+html body .tag.degraded {
+  background: var(--mark) !important;
+  color: var(--ink);
+}
+
+/* Site history and incident pages: the same taped notes as the home page */
+main.container > section:first-child:has(> h1) {
+  position: relative;
+  margin: 0.75rem 0 2.5rem;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem);
+  background: var(--petrol);
+  color: var(--paper);
+  box-shadow: var(--note-shadow);
+  transform: rotate(-0.35deg);
+}
+main.container > section:first-child:has(> h1)::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  left: 2.5rem;
+  width: 5rem;
+  height: 1.5rem;
+  background: var(--tape-light);
+  transform: rotate(-4deg);
+}
+main.container > section > h1 {
+  margin: 0 0 1.5rem;
+  font-family: var(--display);
+  font-size: clamp(2rem, 5.5vw, 3.75rem);
+  line-height: 1.05;
+}
+main.container > section > h1 a {
+  text-decoration: none;
+}
+html body main.container > section > h1 .tag.up {
+  background: var(--mint) !important;
+  color: var(--ink);
+}
+main.container > section > h1 + dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, max-content));
+  gap: 0.25rem 3rem;
+  margin: 0;
+}
+main.container > section > h1 + dl dt {
+  grid-row: 1;
+  font-family: var(--names);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+main.container > section > h1 + dl dd {
+  grid-row: 2;
+  margin: 0;
+  font-family: var(--display);
+  font-size: 2rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+/* Response-time chart on a paper note */
+main.container > section:has(> canvas) {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background: var(--paper);
+  box-shadow: var(--note-shadow);
+}
+main.container > section:has(> canvas) h2 {
+  margin: 0 0 1rem;
+}
+main.container > section > canvas {
+  max-width: 100%;
+  filter: saturate(1.4) brightness(0.55);
+}
+/* Dates between incident groups */
+main.container > section > h3 {
+  margin: 2rem 0 0.75rem;
+  font-family: var(--names);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dim);
+  opacity: 1;
+}
+/* Incidents and incident updates */
+main.container section:not(.live-status) > article {
+  margin: 0 0 0.9rem !important;
+  padding: 1.1rem 1.35rem;
+  border: 0 !important;
+  border-left: 0.45rem solid var(--petrol) !important;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: var(--note-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+main.container section:not(.live-status) > article.down {
+  border-left-color: var(--burnt) !important;
+}
+main.container section:not(.live-status) > article.degraded {
+  border-left-color: var(--mark) !important;
+}
+main.container section:not(.live-status) > article.link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--lift-shadow);
+}
+main.container section:not(.live-status) > article h4 {
+  margin: 0 0 0.2rem;
+  font-family: var(--names);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+main.container section:not(.live-status) > article .f.r {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 0.85rem;
+}
+main.container section:not(.live-status) > article .f.r a {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--mark);
+  color: var(--ink);
+  font-family: var(--names);
+  font-weight: 700;
+  text-decoration: none;
+}
+/* Incident page title and meta */
+main.container > h2 {
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+main.container > section > .f > dl {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.2rem 1.25rem;
+}
+main.container > section > .f > dl dd {
+  margin: 0;
+}
+
 footer {
   margin-top: 3.5rem !important;
   font-family: var(--names);
@@ -373,20 +542,23 @@ footer {
 
 @media (max-width: 600px) {
   nav {
-    padding: 0.75rem 0.75rem 0 !important;
+    padding: 0.9rem 0.75rem 0 !important;
+  }
+  nav .logo {
+    font-size: 1.2rem;
   }
   main.container {
     padding: 0 0.75rem;
   }
-  main.container::before {
+  main.container:has(> article.up)::before {
     left: 0;
     width: 4rem;
   }
-  main.container::after {
+  main.container:has(> article.up)::after {
     right: 0;
     width: 3.5rem;
   }
-  header::after {
+  main.container:has(> article.up) > header::after {
     top: 1.75rem;
     right: 1.5rem;
     width: 4.5rem;
