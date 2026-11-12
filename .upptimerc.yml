@@ -76,7 +76,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: uptime.josemoreira.pt
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/Custom_SNEK_yellow_bg_clearer.png
+  logoUrl: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/snek-character.png
   name: Upty 
   #introTitle: some uptime tracking, with dracula theme
   #introMessage: 
