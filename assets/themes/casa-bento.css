@@ -138,8 +138,8 @@ main.container:has(> article.up) > header::after {
   content: "checked every 2 h";
   position: absolute;
   z-index: 4;
-  top: 2.75rem;
-  right: 3.25rem;
+  top: 12.5rem;
+  right: calc(clamp(1rem, 4vw, 3.5rem) + 19.5rem);
   display: grid;
   place-items: center;
   width: 6.25rem;
@@ -163,7 +163,8 @@ main.container > article.up {
   padding: clamp(1.75rem, 4vw, 3rem);
   border: 0 !important;
   border-radius: 0;
-  background: var(--paper);
+  /* The snek from josemoreira.pt, holding the globe along the bottom edge */
+  background: url("../snek-character.png") right clamp(1rem, 4vw, 3.5rem) bottom / auto 96% no-repeat, var(--paper);
   box-shadow: var(--note-shadow);
   font-size: 0;
   transform: rotate(-0.35deg);
@@ -516,8 +517,23 @@ main.container section:not(.live-status) > article .f.r a {
   font-weight: 700;
   text-decoration: none;
 }
+/* Past incidents on a site page: only the 5 most recent */
+main.container > section:has(> h3) > article:nth-of-type(n + 6),
+main.container > section:has(> h3) > h3:has(+ article:nth-of-type(n + 6)),
+main.container > section:has(> h3) > h3:not(:has(+ article)) {
+  display: none;
+}
+main.container > section:has(> h3):has(> article:nth-of-type(6))::after {
+  content: "Showing the 5 most recent incidents.";
+  display: block;
+  margin-top: 1rem;
+  font-family: var(--names);
+  font-size: 0.85rem;
+  color: var(--dim);
+}
+
 /* Incident page title and meta */
-main.container > h2 {
+main.container > h2:first-child {
   font-family: var(--display);
   font-size: clamp(1.75rem, 4.5vw, 2.75rem);
   font-weight: 400;
@@ -538,6 +554,16 @@ footer {
   font-size: 0.85rem;
   color: var(--dim);
   opacity: 1 !important;
+}
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  main.container > article.up {
+    background-size: auto 70%, auto;
+  }
+  main.container:has(> article.up) > header::after {
+    top: 3rem;
+    right: calc(4vw + 15rem);
+  }
 }
 
 @media (max-width: 600px) {
@@ -565,6 +591,9 @@ footer {
     height: 4.5rem;
     padding: 0.5rem;
     font-size: 0.6rem;
+  }
+  main.container > article.up {
+    background: var(--paper);
   }
   .live-status {
     grid-template-columns: repeat(2, minmax(0, 1fr));
