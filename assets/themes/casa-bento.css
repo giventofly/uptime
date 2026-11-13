@@ -134,24 +134,12 @@ main.container:has(> article.up)::after {
 header {
   margin-bottom: 0 !important;
 }
-/* The snek from josemoreira.pt, climbing out of the headline note like on the blog */
-main.container:has(> article.up) > header::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: -0.75rem;
-  right: clamp(1rem, 4vw, 3.5rem);
-  width: 12.25rem;
-  height: 11.5rem;
-  background: url("../snek-character.png") center bottom / contain no-repeat;
-  pointer-events: none;
-}
 main.container:has(> article.up) > header::after {
   content: "checked every 2 h";
   position: absolute;
   z-index: 4;
-  top: 5.75rem;
-  right: calc(clamp(1rem, 4vw, 3.5rem) + 9.5rem);
+  top: 5.5rem;
+  right: calc(clamp(1.25rem, 4vw, 3.5rem) + 9.25rem);
   display: grid;
   place-items: center;
   width: 5rem;
@@ -171,16 +159,17 @@ main.container:has(> article.up) > header::after {
   transform: rotate(10deg);
 }
 main.container > article.up {
-  margin: 0.75rem 0 1rem;
+  margin: 1.75rem 0 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  height: 10rem;
+  height: 11.5rem;
   padding: 1.25rem clamp(1.5rem, 4vw, 3rem);
   border: 0 !important;
   border-radius: 0;
-  background: var(--paper);
+  /* The snek from josemoreira.pt, standing on the bottom edge of the note */
+  background: url("../snek-character.png") right clamp(1.25rem, 4vw, 3.5rem) bottom / auto 88% no-repeat, var(--paper);
   box-shadow: var(--note-shadow);
   font-size: 0;
   transform: rotate(-0.35deg);
@@ -262,7 +251,7 @@ h2 {
   grid-template-rows: auto 1fr auto;
   align-items: start;
   row-gap: 0.25rem;
-  min-height: 11.5rem;
+  min-height: 9rem;
   margin: 0 !important;
   padding: 1.15rem 1.2rem 0;
   border: 0 !important;
@@ -349,7 +338,7 @@ h2 {
 .live-status > article > div:nth-of-type(1) {
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-top: 0.85rem;
+  margin-top: 0.55rem;
   font-family: var(--display);
   font-size: 2.3rem;
   line-height: 1;
@@ -363,7 +352,7 @@ h2 {
   content: "";
   grid-column: 1 / -1;
   grid-row: 3;
-  height: 3.4rem;
+  height: 2.9rem;
   margin: 0.5rem -1.2rem 0;
   background-color: var(--chart);
   opacity: 0.85;
@@ -549,6 +538,20 @@ main.container > section:has(> h3):has(> article:nth-of-type(6))::after {
   color: var(--dim);
 }
 
+/* Past incidents on the home page: the 6 most recent */
+main.container:has(> .live-status) > section:has(> h3) > article:nth-of-type(6) {
+  display: block;
+}
+main.container:has(> .live-status) > section:has(> h3) > h3:has(+ article:nth-of-type(6)) {
+  display: block;
+}
+main.container:has(> .live-status) > section:has(> h3):has(> article:nth-of-type(6))::after {
+  content: none;
+}
+main.container:has(> .live-status) > section:has(> h3):has(> article:nth-of-type(7))::after {
+  content: "Showing the 6 most recent incidents.";
+}
+
 /* Incident page title and meta */
 main.container > h2:first-child {
   font-family: var(--display);
@@ -599,12 +602,10 @@ footer {
     padding: 0.5rem;
     font-size: 0.56rem;
   }
-  main.container:has(> article.up) > header::before {
-    display: none;
-  }
   main.container > article.up {
     height: auto;
     padding: 1.4rem 1.25rem 1.5rem;
+    background: var(--paper);
   }
   main.container > article.up::after {
     max-width: calc(100% - 4.5rem);
@@ -614,7 +615,7 @@ footer {
     gap: 1.4rem 0.7rem;
   }
   .live-status > article {
-    min-height: 9.5rem;
+    min-height: 8.25rem;
     padding: 0.9rem 0.85rem 0;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto auto 1fr auto;
