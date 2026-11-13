@@ -83,8 +83,6 @@ status-website:
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
   theme: dark
   themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/casa-bento.css
 
@@ -93,6 +91,7 @@ status-website:
 
 # Short labels for the compact status rows
 i18n:
+  footer: "Powered by [Upptime](https://upptime.js.org)"
   overallUptime: "$UPTIME"
   averageResponseTime: "$TIMEms"
 

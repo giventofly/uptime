@@ -126,32 +126,44 @@ main.container:has(> article.up)::before {
   transform: rotate(-35deg);
 }
 main.container:has(> article.up)::after {
-  top: 0.05rem;
-  right: 0.6rem;
-  width: 4.75rem;
-  transform: rotate(33deg);
+  top: 0.15rem;
+  left: 46%;
+  width: 5.5rem;
+  transform: rotate(3deg);
 }
 header {
   margin-bottom: 0 !important;
+}
+/* The snek from josemoreira.pt, climbing out of the headline note like on the blog */
+main.container:has(> article.up) > header::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -0.75rem;
+  right: clamp(1rem, 4vw, 3.5rem);
+  width: 12.25rem;
+  height: 11.5rem;
+  background: url("../snek-character.png") center bottom / contain no-repeat;
+  pointer-events: none;
 }
 main.container:has(> article.up) > header::after {
   content: "checked every 2 h";
   position: absolute;
   z-index: 4;
-  top: 12.5rem;
-  right: calc(clamp(1rem, 4vw, 3.5rem) + 19.5rem);
+  top: 5.75rem;
+  right: calc(clamp(1rem, 4vw, 3.5rem) + 9.5rem);
   display: grid;
   place-items: center;
-  width: 6.25rem;
-  height: 6.25rem;
-  padding: 0.8rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border-radius: 50%;
   background: var(--petrol);
   box-shadow: 0 0 0 0.3rem var(--paper), var(--note-shadow);
   color: var(--paper);
   font-family: var(--names);
-  font-size: 0.82rem;
+  font-size: 0.66rem;
   font-weight: 800;
   line-height: 1.05;
   text-align: center;
@@ -160,11 +172,15 @@ main.container:has(> article.up) > header::after {
 }
 main.container > article.up {
   margin: 0.75rem 0 1rem;
-  padding: clamp(1.75rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 10rem;
+  padding: 1.25rem clamp(1.5rem, 4vw, 3rem);
   border: 0 !important;
   border-radius: 0;
-  /* The snek from josemoreira.pt, holding the globe along the bottom edge */
-  background: url("../snek-character.png") right clamp(1rem, 4vw, 3.5rem) bottom / auto 96% no-repeat, var(--paper);
+  background: var(--paper);
   box-shadow: var(--note-shadow);
   font-size: 0;
   transform: rotate(-0.35deg);
@@ -174,7 +190,8 @@ main.container > article.up::before {
   display: block;
   width: 0.8rem;
   height: 0.8rem;
-  margin-bottom: clamp(1.75rem, 4vw, 3rem);
+  flex: none;
+  margin-bottom: 1rem;
   border-radius: 50%;
   background: var(--petrol);
   box-shadow: 0 0 0 0 rgba(15, 76, 85, 0.45);
@@ -183,9 +200,9 @@ main.container > article.up::before {
 main.container > article.up::after {
   content: "All systems operational.";
   display: block;
-  max-width: 13ch;
+  max-width: calc(100% - 17rem);
   font-family: var(--display);
-  font-size: clamp(2.3rem, 6.4vw, 5.25rem);
+  font-size: clamp(1.9rem, 4.2vw, 3.5rem);
   line-height: 1.02;
   color: var(--ink);
 }
@@ -556,16 +573,6 @@ footer {
   opacity: 1 !important;
 }
 
-@media (max-width: 1100px) and (min-width: 601px) {
-  main.container > article.up {
-    background-size: auto 70%, auto;
-  }
-  main.container:has(> article.up) > header::after {
-    top: 3rem;
-    right: calc(4vw + 15rem);
-  }
-}
-
 @media (max-width: 600px) {
   nav {
     padding: 0.9rem 0.75rem 0 !important;
@@ -585,15 +592,22 @@ footer {
     width: 3.5rem;
   }
   main.container:has(> article.up) > header::after {
-    top: 1.75rem;
-    right: 1.5rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    top: 1.5rem;
+    right: 1.25rem;
+    width: 4.25rem;
+    height: 4.25rem;
     padding: 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.56rem;
+  }
+  main.container:has(> article.up) > header::before {
+    display: none;
   }
   main.container > article.up {
-    background: var(--paper);
+    height: auto;
+    padding: 1.4rem 1.25rem 1.5rem;
+  }
+  main.container > article.up::after {
+    max-width: calc(100% - 4.5rem);
   }
   .live-status {
     grid-template-columns: repeat(2, minmax(0, 1fr));
