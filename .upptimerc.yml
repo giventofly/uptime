@@ -76,15 +76,20 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: uptime.josemoreira.pt
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/giventofly/uptime/refs/heads/master/assets/snek-character.png
-  name: Upty 
+  logoUrl: /snek-character.png
+  favicon: /snek-icon.png
+  faviconSvg: /snek-icon.svg
+  # The name is the browser tab title; the navbar label is set in the theme CSS
+  name: Upty — José Moreira
+  hideNavTitle: true
   #introTitle: some uptime tracking, with dracula theme
   #introMessage: 
   navbar:
     - title: Status
       href: /
   theme: dark
-  themeUrl: https://cdn.jsdelivr.net/gh/giventofly/uptime@master/assets/themes/casa-bento.css
+  # Served by the status site itself (files in assets/ are copied to its root), so changes show within minutes
+  themeUrl: /themes/casa-bento.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
