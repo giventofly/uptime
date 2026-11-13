@@ -92,8 +92,9 @@ nav .logo img {
   margin-right: 0.5rem !important;
   border-radius: 0 !important;
 }
+/* The logo already links to the home page, so the duplicate "Status" link is hidden */
 nav ul {
-  gap: 0.6rem;
+  display: none !important;
 }
 nav ul a {
   padding: 0.4rem 0.55rem !important;
@@ -113,6 +114,25 @@ nav ul a[aria-current] {
 /* Overall status: the hero tile, a taped paper note with a round sticker */
 main.container {
   position: relative;
+}
+/* Keep the headline note's top margin inside main, so the snek below can be lined up with the note */
+main.container:has(> article.up) {
+  display: flow-root;
+}
+/* The snek from josemoreira.pt, climbing out of the top of the headline note like on the blog */
+main.container:has(> article.up) > header::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -1.4rem;
+  right: calc(2rem + clamp(1.25rem, 4vw, 3.5rem));
+  width: 15.25rem;
+  height: 14.5rem;
+  background: url("../snek-character.png") center bottom / contain no-repeat;
+  /* Same tilt as the note, so the globe sits flush on its bottom edge */
+  transform: rotate(-0.35deg);
+  transform-origin: center bottom;
+  pointer-events: none;
 }
 main.container:has(> article.up)::before,
 main.container:has(> article.up)::after {
@@ -142,8 +162,8 @@ main.container:has(> article.up) > header::after {
   content: "checked every 2 h";
   position: absolute;
   z-index: 4;
-  top: 5.5rem;
-  right: calc(clamp(1.25rem, 4vw, 3.5rem) + 9.25rem);
+  top: 8.25rem;
+  right: calc(2rem + clamp(1.25rem, 4vw, 3.5rem) + 11.25rem);
   display: grid;
   place-items: center;
   width: 5rem;
@@ -173,7 +193,7 @@ main.container > article.up {
   border: 0 !important;
   border-radius: 0;
   /* The snek from josemoreira.pt, standing on the bottom edge of the note */
-  background: url("../snek-character.png") right clamp(1.25rem, 4vw, 3.5rem) bottom / auto 88% no-repeat, var(--paper);
+  background: var(--paper);
   box-shadow: var(--note-shadow);
   font-size: 0;
   transform: rotate(-0.35deg);
@@ -609,10 +629,12 @@ footer {
   main.container > article.up {
     height: auto;
     padding: 1.4rem 1.25rem 1.5rem;
-    background: var(--paper);
   }
   main.container > article.up::after {
     max-width: calc(100% - 4.5rem);
+  }
+  main.container:has(> article.up) > header::before {
+    display: none;
   }
   .live-status {
     grid-template-columns: repeat(2, minmax(0, 1fr));
