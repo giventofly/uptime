@@ -251,7 +251,7 @@ h2 {
   grid-template-rows: auto 1fr auto;
   align-items: start;
   row-gap: 0.25rem;
-  min-height: 11.5rem;
+  min-height: 9rem;
   margin: 0 !important;
   padding: 1.15rem 1.2rem 0;
   border: 0 !important;
@@ -338,7 +338,7 @@ h2 {
 .live-status > article > div:nth-of-type(1) {
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-top: 0.85rem;
+  margin-top: 0.55rem;
   font-family: var(--display);
   font-size: 2.3rem;
   line-height: 1;
@@ -352,7 +352,7 @@ h2 {
   content: "";
   grid-column: 1 / -1;
   grid-row: 3;
-  height: 3.4rem;
+  height: 2.9rem;
   margin: 0.5rem -1.2rem 0;
   background-color: var(--chart);
   opacity: 0.85;
@@ -615,7 +615,7 @@ footer {
     gap: 1.4rem 0.7rem;
   }
   .live-status > article {
-    min-height: 9.5rem;
+    min-height: 8.25rem;
     padding: 0.9rem 0.85rem 0;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto auto 1fr auto;
