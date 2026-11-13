@@ -83,6 +83,10 @@ nav .logo {
   line-height: 1;
   transform: rotate(-2deg);
 }
+/* Navbar label text; the config name is the longer browser tab title */
+nav .logo::after {
+  content: "Upty";
+}
 nav .logo img {
   height: 1.6rem !important;
   margin-right: 0.5rem !important;
