@@ -5,7 +5,7 @@
 :root {
   --bg: #e3e9f2;
   --ink: #151920;
-  --dim: #556274;
+  --soft: #4e5a68;
   --paper: #eef3f8;
   --mark: #f6c945;
   --petrol: #0f4c55;
@@ -250,7 +250,7 @@ h2 {
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
   font-weight: 700 !important;
-  color: var(--dim);
+  color: var(--soft);
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
 }
@@ -501,7 +501,7 @@ main.container > section > h3 {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--dim);
+  color: var(--soft);
   opacity: 1;
 }
 /* Incidents and incident updates */
@@ -560,7 +560,7 @@ main.container > section:has(> h3):has(> article:nth-of-type(6))::after {
   margin-top: 1rem;
   font-family: var(--text);
   font-size: 0.85rem;
-  color: var(--dim);
+  color: var(--soft);
 }
 
 /* Past incidents on the home page: the 6 most recent */
@@ -597,7 +597,7 @@ footer {
   margin-top: 3.5rem !important;
   font-family: var(--text);
   font-size: 0.85rem;
-  color: var(--dim);
+  color: var(--soft);
   opacity: 1 !important;
 }
 
